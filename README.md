@@ -16,6 +16,6 @@ To choose the appropriate technique to choose the most meaningful indicators to 
 The threshold I choose to include or exclude features is p-value. After adding a feature, it fit the OLS and calculate the p-value, if its p-value is less than 0.05, then add in, if it’s greater than 0.1, than exclude.
 - **LASSO**: A technique that regularizes the coefficient estimates, shrinks the coefficients towards zero. The lasso regression coefficient estimates (𝛽^𝐿 ) ̂ are the values that minimize:
 $$
-\sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + \lambda \sum_{j=1}^{p} |\beta_j| = RSS + \lambda \sum_{j=1}^{p} |\beta_j|
+sum_{i=1}^{n} \left( y_i - beta_0 - sum_{j=1}^{p} beta_j x_{ij} right)^2 + lambda sum_{j=1}^{p} |beta_j| = RSS + lambda sum_{j=1}^{p} |beta_j|
 $$
 
