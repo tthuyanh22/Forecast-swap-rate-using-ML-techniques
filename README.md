@@ -8,7 +8,7 @@
 #### Objective: 
 The objective is to build a out-of-sample and one-step-ahead forecasting tool for the last 3 years worth of data
 consider the last 3 years of monthly forecasts (a total of 36 forecasts)
-#### project model selection
+#### Model selection
 To choose the appropriate technique to choose the most meaningful indicators to explain the target among 31 indicators. I consider between **Stepwise Regression** (choosing a subset of predictors) and **LASSO Regularization** (regularize the coefficient estimates). My aim is to choose the technique which gives me less mean squared error on the test set. 
 - **Stepwise**: I choose the hybrid approach, i.e. the combination between forward selection and backward elimination. It starts with a model with no predictor. The at each step the variable that gives the greatest additional improvement to the fit is added to the model. After adding each new variable, the method may also remove any variables that no longer provide an improvement in the model fit.
   ![image](https://github.com/user-attachments/assets/3f55273f-2f32-433d-9715-d9392a003e49)
